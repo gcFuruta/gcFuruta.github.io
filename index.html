@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Front-End Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">YourLogo</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hi, I'm <span>Your Name</span></h1>
+      <p>I build beautiful, responsive websites that bring ideas to life.</p>
+      <div class="cta-buttons">
+        <a href="#portfolio" class="btn primary-btn">View My Work</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p class="bio">
+      I'm a passionate front-end developer with a keen eye for design and a strong foundation in coding. 
+      I specialize in creating user-friendly, responsive websites that are both visually appealing and functional.
+    </p>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="your-photo.jpg" alt="Your Name">
+      </div>
+      <div class="about-text">
+        <h3>Biography</h3>
+        <p>
+          Hello! My name is [Your Name], and I’m a front-end developer with over [X years] of experience. 
+          I started my journey into web development by exploring HTML and CSS, and I’ve since honed my skills 
+          in JavaScript, React, and modern front-end frameworks. I enjoy transforming creative ideas into digital experiences 
+          that users love.
+        </p>
+        <p>
+          When I’m not coding, you’ll often find me experimenting with new web technologies, sketching UI ideas, or 
+          hiking outdoors for inspiration. I’m driven by curiosity and a desire to continuously improve my craft.
+        </p>
+        <p>
+          Let’s collaborate to bring your next project to life!
+        </p>
+      </div>
+    </div>
+    <div class="skills">
+      <h3>Key Skills</h3>
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>TailwindCSS</span>
+      <span>Git & GitHub</span>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project Title</h3>
+        <p>A short description of the project goes here.</p>
+        <a href="#" class="btn primary-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title</h3>
+        <p>A short description of the project goes here.</p>
+        <a href="#" class="btn primary-btn">View Project</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn primary-btn">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+
+<style>
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h1 span {
+  color: #ffcc00;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background: #ffcc00;
+  color: #333;
+}
+
+.secondary-btn {
+  background: #333;
+  color: #fff;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 1rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  max-width: 960px;
+  font-size: 1.2rem;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 2;
+  text-align: left;
+  max-width: 600px;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills span {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #2575fc;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 2rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f4f4f4;
+  border-radius: 5px;
+  width: 300px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem 1rem;
+  background: #2575fc;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto 2rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  background: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+
+</style>
+</html>
